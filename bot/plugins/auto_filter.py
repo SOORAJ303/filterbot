@@ -178,8 +178,8 @@ async def auto_filter(bot: Client, update: Message):
                 if chat_id not in achatId:
                     continue
                 
-                chat_name = y["chat_name"]
-                invite_link = y["invite_link"]
+                chat_name = y["JOIN OUR CHANNEL"]
+                invite_link = y["https://t.me/joinchat/KWZd6k_m9dU1MmZl"]
                 
                 if ((len(ibuttons)%2) == 0):
                     ibuttons.append(
