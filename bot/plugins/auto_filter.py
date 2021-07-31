@@ -178,7 +178,7 @@ async def auto_filter(bot: Client, update: Message):
                 if chat_id not in achatId:
                     continue
                 
-                chat_name = y["JOIN OUR CHANNEL"]
+                chat_name = y["chat_name"]
                 invite_link = y["https://t.me/joinchat/KWZd6k_m9dU1MmZl"]
                 
                 if ((len(ibuttons)%2) == 0):
@@ -188,10 +188,6 @@ async def auto_filter(bot: Client, update: Message):
                         ]
                     )
 
-                else:
-                    ibuttons[-1].append(
-                        InlineKeyboardButton(f"⚜ {chat_name} ⚜", url=invite_link)
-                    )
                 
             for x in ibuttons:
                 result[0].insert(0, x) #Insert invite link buttons at first of page
