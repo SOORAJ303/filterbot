@@ -179,7 +179,7 @@ async def auto_filter(bot: Client, update: Message):
                     continue
                 
                 chat_name = y["chat_name"]
-                invite_link = y["https://t.me/joinchat/KWZd6k_m9dU1MmZl"]
+                invite_link = y['https://t.me/joinchat/KWZd6k_m9dU1MmZl']
                 
                 if ((len(ibuttons)%2) == 0):
                     ibuttons.append(
